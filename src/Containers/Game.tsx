@@ -17,13 +17,13 @@ const GameContainer = connect(
 )(App);
 
 const gameStore = createStore(gameReducer);
-const pixiApp = new Pixi.Application({transparent: false, width: 1024, height: 768});
+const pixiApp = new Pixi.Application({transparent: false});
 
 class Game extends Component {
   render() {
     return (
       <Provider store={gameStore}>
-        <GameContainer pixiApp={pixiApp}/>
+        <GameContainer pixiApp={pixiApp} aspectRatio={16 / 9}/>
       </Provider>
     );
   }
