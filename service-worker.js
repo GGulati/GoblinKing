@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/GoblinKing/precache-manifest.a7380606c010a08d0582f604f1198f02.js"
+  "/GoblinKing/precache-manifest.77e38f50eaa2b124c8e5197ed2a53d95.js"
 );
 
 self.addEventListener('message', (event) => {

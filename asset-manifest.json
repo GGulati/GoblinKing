@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/GoblinKing/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/GoblinKing/static/js/main.eba2815f.chunk.js",
-    "main.js.map": "/GoblinKing/static/js/main.eba2815f.chunk.js.map",
+    "main.js": "/GoblinKing/static/js/main.ac7bb891.chunk.js",
+    "main.js.map": "/GoblinKing/static/js/main.ac7bb891.chunk.js.map",
     "runtime-main.js": "/GoblinKing/static/js/runtime-main.487813a1.js",
     "runtime-main.js.map": "/GoblinKing/static/js/runtime-main.487813a1.js.map",
-    "static/js/2.02b951a1.chunk.js": "/GoblinKing/static/js/2.02b951a1.chunk.js",
-    "static/js/2.02b951a1.chunk.js.map": "/GoblinKing/static/js/2.02b951a1.chunk.js.map",
+    "static/js/2.7801c776.chunk.js": "/GoblinKing/static/js/2.7801c776.chunk.js",
+    "static/js/2.7801c776.chunk.js.map": "/GoblinKing/static/js/2.7801c776.chunk.js.map",
     "index.html": "/GoblinKing/index.html",
-    "precache-manifest.a7380606c010a08d0582f604f1198f02.js": "/GoblinKing/precache-manifest.a7380606c010a08d0582f604f1198f02.js",
+    "precache-manifest.77e38f50eaa2b124c8e5197ed2a53d95.js": "/GoblinKing/precache-manifest.77e38f50eaa2b124c8e5197ed2a53d95.js",
     "service-worker.js": "/GoblinKing/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/GoblinKing/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.02b951a1.chunk.js.LICENSE.txt": "/GoblinKing/static/js/2.02b951a1.chunk.js.LICENSE.txt"
+    "static/js/2.7801c776.chunk.js.LICENSE.txt": "/GoblinKing/static/js/2.7801c776.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.487813a1.js",
-    "static/js/2.02b951a1.chunk.js",
+    "static/js/2.7801c776.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.eba2815f.chunk.js"
+    "static/js/main.ac7bb891.chunk.js"
   ]
 }
