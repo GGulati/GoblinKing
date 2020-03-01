@@ -1,14 +1,14 @@
-import React, { Fragment, useRef, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { Grid } from '@material-ui/core';
 
 import * as Pixi from "pixi.js"
 
-import Header from './Header'
-import AspectRatio from './AspectRatio';
-import Copyright from './Copyright';
-import { Grid } from '@material-ui/core';
+import AspectRatio from './Basic/AspectRatio';
+import Footer from './Basic/Footer';
+import Header from './Header';
 
 type AppProps = {
   message: string,
@@ -17,9 +17,9 @@ type AppProps = {
 }
 
 function App(props: AppProps) {
-  const pixiCanvasRef = useRef<HTMLDivElement>(null);
+  const pixiCanvasRef = React.useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (pixiCanvasRef.current != null) {
       props.pixiApp.resizeTo = pixiCanvasRef.current;
       pixiCanvasRef.current.appendChild(props.pixiApp.view);
@@ -29,10 +29,12 @@ function App(props: AppProps) {
   return (
     <Fragment>
       <Header />
+    
       <Container>
         <Typography variant="h5" component="h1" gutterBottom>
           {props.message}
         </Typography>
+
         <AspectRatio ratio={props.aspectRatio}>
           <div style={{width: '100%', height: '100%'}} ref={pixiCanvasRef} />
         </AspectRatio>
@@ -46,7 +48,8 @@ function App(props: AppProps) {
           </Grid>
         </Grid>
       </Container>
-      <Copyright />
+
+      <Footer />
     </Fragment>
   );
 }

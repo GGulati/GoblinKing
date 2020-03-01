@@ -6,14 +6,14 @@ import { ThemeProvider } from '@material-ui/core/styles';
 
 import * as serviceWorker from './serviceWorker';
 import './index.css';
-import Theme from './Components/Theme';
+import Theme from './Components/Basic/Theme';
 
-import Game from './Containers/Game';
+import MainRouter from './Routes/MainRouter';
 
 ReactDOM.render(
   <ThemeProvider theme={Theme}>
     <CssBaseline />
-    <Game />
+    <MainRouter />
   </ThemeProvider>,
   document.getElementById('root')
 );

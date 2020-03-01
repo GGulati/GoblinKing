@@ -3,7 +3,7 @@ export type GameState = {
 }
 
 const INITIAL_STATE: GameState = {
-  message: 'Hello world!'
+  message: 'Welcome to a very WIP game'
 }
 
 function gameReducer(state: GameState = INITIAL_STATE) {
