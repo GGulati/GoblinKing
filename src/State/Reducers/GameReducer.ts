@@ -1,4 +1,4 @@
-type GameState = {
+export type GameState = {
   message: string
 }
 
@@ -10,4 +10,4 @@ function gameReducer(state: GameState = INITIAL_STATE) {
   return state;
 }
 
-export { GameState, gameReducer };
+export default gameReducer;

@@ -6,7 +6,7 @@ import { Provider } from 'react-redux';
 import * as Pixi from "pixi.js"
 
 import App from '../Components/App';
-import { GameState, gameReducer } from '../State/Reducers/GameReducer';
+import gameReducer, { GameState } from '../State/Reducers/GameReducer';
 
 const mapStateToProps = (state: GameState) => ({
   message: state.message,
