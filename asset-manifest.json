@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/GoblinKing/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/GoblinKing/static/js/main.b646ede9.chunk.js",
+    "main.js.map": "/GoblinKing/static/js/main.b646ede9.chunk.js.map",
+    "runtime-main.js": "/GoblinKing/static/js/runtime-main.487813a1.js",
+    "runtime-main.js.map": "/GoblinKing/static/js/runtime-main.487813a1.js.map",
+    "static/js/2.c6b47403.chunk.js": "/GoblinKing/static/js/2.c6b47403.chunk.js",
+    "static/js/2.c6b47403.chunk.js.map": "/GoblinKing/static/js/2.c6b47403.chunk.js.map",
+    "index.html": "/GoblinKing/index.html",
+    "precache-manifest.c0c2780a05eb84ade9c39e8438cfa160.js": "/GoblinKing/precache-manifest.c0c2780a05eb84ade9c39e8438cfa160.js",
+    "service-worker.js": "/GoblinKing/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/GoblinKing/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.c6b47403.chunk.js.LICENSE.txt": "/GoblinKing/static/js/2.c6b47403.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.487813a1.js",
+    "static/js/2.c6b47403.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.b646ede9.chunk.js"
+  ]
+}
