@@ -1,6 +1,7 @@
 {
   "name": "goblinking",
   "author": "ggulati",
+  "homepage": "https://ggulati.github.io/GoblinKing/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
