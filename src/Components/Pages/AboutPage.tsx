@@ -3,8 +3,8 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 
 
-import Header from './Header';
-import Footer from './Basic/Footer';
+import Header from '../Basic/Header';
+import Footer from '../Basic/Footer';
 
 export default function About() {
   return (
