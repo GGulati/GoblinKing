@@ -1,18 +1,22 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Grid } from '@material-ui/core';
 
 import * as Pixi from "pixi.js"
 
 import AspectRatio from './AspectRatio';
-import { GameState } from '../../State/Reducers/GameReducer';
+import KingEngine from '../../KingEngine/KingEngine';
+import KingGame from '../../KingEngine/KingGame';
 
-type GameProps = {
-  state: GameState,
+export type GameProps = {
   aspectRatio: number,
   pixiApp: Pixi.Application,
+  engine: KingEngine,
+  game: KingGame,
+  saveGame: () => string,
+  loadGame: () => void,
+  loadGameFromUI: (gameState: string) => void,
 }
 
 function Game(props: GameProps) {
@@ -22,25 +26,23 @@ function Game(props: GameProps) {
     if (pixiCanvasRef.current != null) {
       props.pixiApp.resizeTo = pixiCanvasRef.current;
       pixiCanvasRef.current.appendChild(props.pixiApp.view);
+
+      props.engine.initialize();
     }
   })
 
   return (
     <Container>
-      <Typography variant="h5" component="h1" gutterBottom>
-        {props.state.message}
-      </Typography>
-
       <AspectRatio ratio={props.aspectRatio}>
         <div style={{width: '100%', height: '100%'}} ref={pixiCanvasRef} />
       </AspectRatio>
 
       <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
         <Grid item>
-          <Button variant="contained">Bread</Button>
+          <Button variant="contained" onClick={() => props.saveGame()}>Save</Button>
         </Grid>
         <Grid item>
-          <Button variant="contained">Scrap</Button>
+          <Button variant="contained" onClick={() => props.loadGame()}>Load</Button>
         </Grid>
       </Grid>
     </Container>
