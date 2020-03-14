@@ -4,8 +4,8 @@ export enum KingTileType {
   Grass = "base_out_atlas-118.png",
 }
 
-export function getTile(tile: KingTileType): Pixi.Texture {
-  return Pixi.Texture.from(tile);
+export function getTile(res: Pixi.LoaderResource, tile: KingTileType): Pixi.Texture {
+  return res.textures!![tile];
 }
 
 export default { KingTileType, getTile };

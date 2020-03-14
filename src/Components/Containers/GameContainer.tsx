@@ -27,6 +27,8 @@ function createGameEngine(): GameProps {
   }
   const loadGameFromUI = (gameState: string) => { kingGame.loadSavedGame(gameState) }
 
+  loadGame();
+
   return {
     aspectRatio: 16 / 9,
     pixiApp,

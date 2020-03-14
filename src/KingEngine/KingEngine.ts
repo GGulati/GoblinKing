@@ -34,7 +34,7 @@ class KingEngine {
     this.fpsText = new Pixi.Text("FPS: " + this.pixiApp.ticker.FPS);
     this.pixiApp.stage.addChild(this.fpsText);
 
-    this.kingGame.initialize(gameContainer, resources["sprites"]!!);
+    this.kingGame.initialize(gameContainer, resources["sprites"]!!, resources["tiles"]!!);
 
     this.pixiApp.ticker.add(delta => this.update(delta));
     this.pixiApp.start();

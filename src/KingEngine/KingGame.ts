@@ -13,7 +13,7 @@ class KingGame {
     this.ratPos = [32, 32];
   }
 
-  initialize(gameContainer: Pixi.Container, sprites: Pixi.LoaderResource) {
+  initialize(gameContainer: Pixi.Container, sprites: Pixi.LoaderResource, tiles: Pixi.LoaderResource) {
     this.ratSprite = new Pixi.AnimatedSprite(getAnimation(sprites, KingSprite.Dog, KingAnimation.Right));
     this.ratSprite.animationSpeed = 1.0 / 10.0;
     this.ratSprite.play();
@@ -21,7 +21,7 @@ class KingGame {
     const map = new Pixi.Container();
     for (var y = 0; y < SCREEN_HEIGHT / TILE_SIZE; y++) {
       for (var x = 0; x < SCREEN_WIDTH / TILE_SIZE; x++) {
-        const tile = new Pixi.Sprite(getTile(KingTileType.Grass));
+        const tile = new Pixi.Sprite(getTile(tiles, KingTileType.Grass));
         tile.x = x * TILE_SIZE;
         tile.y = y * TILE_SIZE;
         map.addChild(tile);
